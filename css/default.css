@@ -29,13 +29,13 @@
 /* #region Root */
 
 :root {
-    --h1-font: 'Poppins', sans-serif;
-    --h1-size: 4.5rem;
+    --h1-font: 'Oswald', sans-serif;
+    --h1-size: 3.5rem;
     --h1-weight: 900;
-    --h2-font: 'Poppins', sans-serif;
-    --h2-size: 3rem;
+    --h2-font: 'Oswald', sans-serif;
+    --h2-size: 2.5rem;
     --h2-weight: 700;
-    --p-font: 'Montserrat', sans-serif;
+    --p-font: 'Lato', sans-serif;
     --p-size: 1rem;
     --p-weight: 400;
     --header-bg-color: #231f20;

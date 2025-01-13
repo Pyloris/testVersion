@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&amp;display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -133,6 +135,19 @@ table {
 2. General
 ----------------------------------------------*/
 
+.oval-decor {
+    position: absolute;
+    height: 85px;
+    width: 280px;
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid orange;
+    border-radius: 50%;
+    z-index: 0;
+}
+
 /* #region General */
 
 ::selection {
@@ -166,7 +181,7 @@ a:not([href]) i:hover {
 }
 
 p {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     font-size: var(--p-size);
     font-weight: var(--p-weight);
     line-height: 1.5;
@@ -182,7 +197,7 @@ p:last-child {
 
 h1,
 .slide-content .title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     font-size: var(--h1-size);
     font-weight: var(--h1-weight);
     line-height: 1.2;
@@ -2514,6 +2529,12 @@ header .navbar-expand .navbar-brand .featured .first {
     cursor: w-resize;
 }
 
+#partners .swiper-slide img {
+    width: 90px;      /* Or any desired fixed size */
+    height: 90px;     /* Fixed height */
+    object-fit: contain; /* Maintain aspect ratio while fitting within the box */
+}
+
 .slide-center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3291,10 +3312,16 @@ section#partners {
 }
 
 .fit-image {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center; */
+}
+
+.make-smaller {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 
 .fit-image.w-85 {
@@ -3393,14 +3420,17 @@ section#partners {
 }
 
 .form-control {
+    appearance: none;
     width: 100%;
     height: 50px;
     background: no-repeat;
     box-shadow: none;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.075);
-    border: none;
-    border-radius: 4px;
+    /* background-color: rgba(0, 0, 0, 0.075); */
+    border-color: transparent;
+    border-bottom: 1px solid grey;
+    /* border-radius: 4px; */
+    border-radius: 0;
     line-height: 1.2;
     color: var(--primary-t-color);
 }
@@ -3434,10 +3464,12 @@ select.form-control {
 }
 
 .form-control:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.075);
     outline: none;
     color: var(--primary-t-color);
     border: none;
+    border-bottom: 1px solid black;
     box-shadow: none;
 }
 
@@ -4185,6 +4217,87 @@ footer .copyright p {
 
 /* #endregion Keyframe */
 
+
+.oval-decor {
+    position: absolute;
+    height: 45px;
+    width: 100px;
+    top: 7px;
+    left: -2px;
+    right: 0;
+    bottom: 0;
+    border: 2px solid orange;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.oval-decor-lg {
+    position: absolute;
+    height: 60px;
+    width: 240px;
+    top: 9px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    border: 2px solid orange;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.oval-decor-md {
+    position: absolute;
+    height: 60px;
+    width: 160px;
+    top: 9px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    border: 2px solid orange;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.oval-decor-sm {
+    position: absolute;
+    height: 50px;
+    width: 110px;
+    top: 9px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    border: 2px solid orange;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.oval-decor-white {
+    position: absolute;
+    height: 50px;
+    width: 110px;
+    top: 9px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.oval-decor-white-lg {
+    position: absolute;
+    height: 60px;
+    width: 160px;
+    top: 9px;
+    left: 3px;
+    right: 0px;
+    bottom: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
+
 /*----------------------------------------------
 15. All Media Queries
 ----------------------------------------------*/
@@ -4192,8 +4305,84 @@ footer .copyright p {
 /* #region All Media Queries */
 
 @media(max-width: 1199px) {
+    .oval-decor {
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        top: 7px;
+        left: -2px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
 
-    /* #region Header */
+    .oval-decor-lg {
+        position: absolute;
+        height: 60px;
+        width: 240px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-md {
+        position: absolute;
+        height: 60px;
+        width: 160px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-sm {
+        position: absolute;
+        height: 50px;
+        width: 110px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white {
+        position: absolute;
+        height: 50px;
+        width: 110px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white-lg {
+        position: absolute;
+        height: 60px;
+        width: 160px;
+        top: 9px;
+        left: 3px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
 
     body header .navbar-expand .navbar-nav.toggle {
         display: flex;
@@ -4343,7 +4532,83 @@ footer .copyright p {
 
 @media(max-width: 991px) {
 
-    /* #region General */
+    .oval-decor {
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        top: 7px;
+        left: -2px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-lg {
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        top: 5px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-md {
+        position: absolute;
+        height: 50px;
+        width: 130px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-sm {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white {
+        position: absolute;
+        height: 45px;
+        width: 90px;
+        top: 7px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white-lg {
+        position: absolute;
+        height: 50px;
+        width: 130px;
+        top: 9px;
+        left: 3px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
 
     body h1,
     body .slide-content .title {
@@ -4439,6 +4704,84 @@ footer .copyright p {
 }
 
 @media(max-width: 767px) {
+
+    .oval-decor {
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        top: 7px;
+        left: -2px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-lg {
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        top: 5px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-md {
+        position: absolute;
+        height: 50px;
+        width: 130px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-sm {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white {
+        position: absolute;
+        height: 45px;
+        width: 90px;
+        top: 7px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white-lg {
+        position: absolute;
+        height: 50px;
+        width: 130px;
+        top: 9px;
+        left: 3px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
 
     /* #region General */
 
@@ -4639,6 +4982,84 @@ footer .copyright p {
 @media (max-width: 576px) {
 
     /* #region Feature */
+    
+    .oval-decor {
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        top: 7px;
+        left: -2px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-lg {
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        top: 5px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-md {
+        position: absolute;
+        height: 50px;
+        width: 130px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-sm {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white {
+        position: absolute;
+        height: 45px;
+        width: 90px;
+        top: 7px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white-lg {
+        position: absolute;
+        height: 50px;
+        width: 130px;
+        top: 9px;
+        left: 3px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
 
     body .bricklayer-column-sizer {
 		width: 100%;
@@ -4669,6 +5090,84 @@ footer .copyright p {
 }
 
 @media(max-width: 374px) {
+
+    .oval-decor {
+        position: absolute;
+        height: 45px;
+        width: 100px;
+        top: 7px;
+        left: -2px;
+        right: 0;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-lg {
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        top: 5px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-md {
+        position: absolute;
+        height: 50px;
+        width: 130px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-sm {
+        position: absolute;
+        height: 50px;
+        width: 90px;
+        top: 9px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid orange;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white {
+        position: absolute;
+        height: 45px;
+        width: 90px;
+        top: 7px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    .oval-decor-white-lg {
+        position: absolute;
+        height: 50px;
+        width: 130px;
+        top: 9px;
+        left: 3px;
+        right: 0px;
+        bottom: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        z-index: 0;
+    }
 
     /* #region General */
 
@@ -4724,3 +5223,20 @@ section#Business {
 section#about-3 .items img {
     width: 40px;
 }
+
+.head-text {
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.head-text-container {
+      display: inline-block;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      z-index: 1;
+}
+
