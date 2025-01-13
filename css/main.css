@@ -3425,7 +3425,8 @@ section#partners {
     height: 50px;
     background: no-repeat;
     box-shadow: none;
-    padding: 1rem;
+    padding-top: 20px;
+    padding-left: 0px;
     /* background-color: rgba(0, 0, 0, 0.075); */
     border-color: transparent;
     border-bottom: 1px solid grey;

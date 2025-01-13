@@ -281,7 +281,7 @@
                         <div class="col-12 p-0">
                             <h2>Our
                                 <span class="head-text-container">
-                                    <span class="head-text">
+                                    <span style="color: #FF7722;" class="head-text">
                                         Goals
                                     </span>
                                     <span class="oval-decor-white"></span>
@@ -380,7 +380,7 @@
                         <div class="col-12 p-0">
                             <h2>
                                 <span class="head-text-container">
-                                    <span class="head-text">Business</span>
+                                    <span class="head-text" style="color: #FF7722;">Business</span>
                                     <span class="oval-decor-white-lg"></span>
                                 </span>
                                  MODEL</h2>
@@ -740,19 +740,13 @@
     </section>
 
 
-
-
-
-
-
     <!-- Contact -->
     <section id="contact" class="section-7 form contact">
         <div class="container">
             <div class="row" style="display: flex; justify-content: center; align-items: center;">
                 <div class="col-12 col-md-8 pr-md-5 align-self-center text">
                     <div class="row intro">
-                        <div class="col-12 p-0">
-                            <span class="pre-title m-0">Send a message</span>
+                        <div class="col-12 p-0" style="text-align: center;">
                             <h2>Get in 
                                 <span class="head-text-container">
                                     <span class="head-text">Touch</span>
@@ -767,26 +761,40 @@
                             <form action="#" class="NEO-simple-form" id="form1" method="post"> <input type="hidden" name="section" value="NEO_form">
 
                                 <div class="row form-group-margin">
-                                    <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                        <input type="text" name="name" class="form-control field-name" placeholder="Name" required>
+                                    <div style="display: flex; flex-direction: column; margin-bottom: 10px;" class="col-12 col-md-6 m-0 p-2 input-group">
+                                        <p style="color: black; font: bold; margin-bottom: -7px;">FIRST NAME</p>
+                                        <input type="text" name="firstname" class="form-control field-name" placeholder="Enter first name" required>
                                     </div>
-                                    <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                        <input type="email" name="email" class="form-control field-email" placeholder="abdul@gmail.com" required>
+                                    <div style="display: flex; flex-direction: column;" class="col-12 col-md-6 m-0 p-2 input-group">
+                                        <p style="color: black; font: bold; margin-bottom: -7px;">LAST NAME</p>
+                                        <input type="text" name="lastname" class="form-control field-email" placeholder="Enter last name" required>
                                     </div>
-                                    <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                        <input type="text" name="CellPhone" class="form-control field-phone" placeholder="+9 548439585" required>
+                                    <div  style="display: flex; flex-direction: column;" class="col-12 col-md-6 m-0 p-2 input-group">
+                                        <p style="color: black; font: bold; margin-bottom: -7px;">EMAIL</p>
+                                        <input type="email" name="email" class="form-control field-email" placeholder="Enter your email" required>
                                     </div>
-                                    <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                        <input type="text" name="subject" class="form-control field-phone" placeholder="Subject" required>
+                                    <div  style="display: flex; flex-direction: column;" class="col-12 col-md-6 m-0 p-2 input-group">
+                                        <p style="color: black; font: bold; margin-bottom: -7px;">PHONE</p>
+                                        <input type="text" name="phone" class="form-control field-phone" placeholder="Enter your phone number" required>
                                     </div>
-                                    <div class="col-12 m-0 p-2 input-group">
-                                        <textarea name="Details" class="form-control field-message" placeholder="Message" required></textarea>
+                                    <div style="display: flex; flex-direction: column;"  class="col-12 m-0 p-2 input-group">
+                                        <p style="color: black; font: bold; margin-bottom: -7px;">MESSAGE</p>
+                                        <!-- <textarea name="Details" class="form-control field-message" placeholder="" required></textarea> -->
+                                        <input type="text" name="phone" class="form-control field-phone" placeholder="Enter your message" required>
                                     </div>
                                     <div class="col-12 col-12 m-0 p-2 input-group">
                                         <span class="alert-danger"></span>
                                     </div>
-                                    <div class="col-12 input-group m-0 p-2">
-                                        <button class="btn primary-button">SEND</button>
+                                    <div class="col-12 input-group m-0 p-2" style="margin-bottom: 20px; pointer; user-select: none; display: flex; justify-content: start; align-items: center; gap: 10px; color:black; font: bold;">
+                                        <span>
+                                            SUBMIT
+                                        </span>
+                                        <svg style="width: 15px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                    </div>
+
+                                    <div style="margin-top: 50px">
+                                        <p>EMAIL US</p>
+                                        <p style="color: black; margin-top: -20px; font: bold;">support@sna.com</p>
                                     </div>
                                 </div>
                         </div>
@@ -803,14 +811,29 @@
         <!-- Footer [content] -->
         <section id="footer" class="odd footer offers">
             <div class="container">
-                <div class="row" style="justify-content: space-between;">
+                <div class="row" style="display: flex; justify-content: space-evenly;">
 
                     <!-- About Section (Left) -->
                     <div class="col-12 col-lg-4" style="padding: 20px;">
-                        <div class="footer-left">
-                            <h4>About</h4>
-                            <p>WE GO ABOVE AND BEYOND ON EVERY JOB, PERIOD.</p>
-                            <a href="#contact" class="mt-4 btn outline-button smooth-anchor">GET IN TOUCH</a>
+                        <div>
+                            <h4 style="text-align: center;">About</h4>
+                            <ul class="navbar-nav" style="display:flex; justify-content: center; align-items: center;">
+                                <li class="nav-item">
+                                    <a href="tel:xxxxxxxxxx" class="nav-link">
+                                        <i class="fas fa-phone-alt mr-2"></i>
+                                        xxxxxxxxxxxx
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="mailto:info@sna.com" class="nav-link">
+                                        <i class="fas fa-envelope mr-2"></i>
+                                        info@sna.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <a href="#contact" class="mt-4 btn outline-button smooth-anchor">GET IN TOUCH</a>
+                            </div>
                         </div>
                     </div>
 
@@ -830,20 +853,8 @@
                     <!-- Address Section (Right) -->
                     <div class="col-12 col-lg-4" style="padding: 20px;">
                         <div class="footer-right">
-                            <h4>SNA Address</h4>
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="tel:xxxxxxxxxx" class="nav-link">
-                                        <i class="fas fa-phone-alt mr-2"></i>
-                                        xxxxxxxxxxxx
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="mailto:info@sna.com" class="nav-link">
-                                        <i class="fas fa-envelope mr-2"></i>
-                                        info@sna.com
-                                    </a>
-                                </li>
+                            <h4 style="text-align: center;">SNA Address</h4>
+                            <ul class="navbar-nav" style="display:flex; justify-content: center; align-items: center;">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link" data-toggle="modal" data-target="#map">
                                         <i class="fas fa-map-marker-alt mr-2"></i>
@@ -853,7 +864,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
